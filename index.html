@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="h2">
+        <h2>Tip Calculator</h2>
+
+    </div> 
+    <main>
+        <div class="feedback">
+        </div>
+        <form action="" id="form">
+            <div class="qstn">
+                <h4 >How much was your bill?</h4>
+                <div class="input-group">
+                   <i class="fa-solid fa-dollar-sign"></i>
+                   <input aria-label="number" type ="number"  id="billnumber">
+                </div>
+            </div>
+            <div class="qstn">
+                <h4 >How Many people sharing the bill?</h4>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input aria-label="number" type ="number"  id="pplnumber">
+                </div>
+            </div>       
+            <div class="qstn">
+                <h4 >How Many people sharing the bill?</h4>
+                <div class="input-group">
+                 <select title="choose" name="service" id="service">
+                    <option selected value="0"> Choose</option>
+                 </select>
+                </div>
+            </div>  
+            <input type="submit" class="submit" value="calculate">
+        </form>
+        <div class="loading">
+            <img src="/img/loading.gif" alt="">
+        </div>
+        <div class="results">
+            <h3>tip amount<span> $ </span><span id="tip-amount"></span></h3>
+            <h3>total amount<span> $ </span><span id="total-amount"></span></h3>
+            <h3>each person owes<span> $ </span><span id="person-amount"></span></h3>
+           </div>
+    </main>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>        

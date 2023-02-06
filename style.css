@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBABA;
+}
+
+main {
+   background-color: white;
+   padding: 2rem;
+   width: 55vw;
+   border-radius:0 0 20px 20px;
+   text-align: center;
+
+}
+
+
+.h2 {
+   background-color: #7B2869;
+   border-radius: 20px 20px 0 0px;
+   width: 55vw;
+   text-align: center;
+   color: white;
+   padding: 1rem;
+}
+.feedback{
+    color: black;
+    font-weight:100;
+    margin-bottom: 0.5rem;
+    background-color: #FFBABA;
+    border-radius: 5px;
+    padding:0.5rem;
+}
+
+.feedback p {
+    margin-bottom: 0.25rem;
+}
+
+.qstn input {
+    padding: 0.5rem;
+    border: 1px solid #7B2869;
+    border-radius: 0 5px 5px  0;
+    width: 100%;
+}
+
+
+.input-group{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.input-group i{
+    color: white;
+    background-color: #7B2869;
+    padding: 0.7em;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.input-group select{
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.submit {
+    background-color: #7B2869;
+    color: white;
+    padding:0.7rem;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit:hover{
+    opacity: 50%;
+}
+
+h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.results h3 {
+    margin-top:0.5rem;
+}
+
+/********************/
+@media screen  and (min-width:850px){
+    main{
+      width: 35vw;
+    }
+
+    .h2{
+        width: 35vw;
+
+    }
+}
+
+
+.feedback {
+    display: none;
+  }
+  .loading {
+    display: none;
+  }
+  
+  .results {
+    display: none;
+  }
+  
+  .showItem {
+    display: block;
+  }
+  
